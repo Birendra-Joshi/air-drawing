@@ -54,3 +54,17 @@ No installation or build step required — everything runs client-side.
 - A reasonably modern browser with ES module support
 
 ## File Structure
+.
+└── index.html # Everything — markup, styles, and logic — in a single file
+
+
+## Known Limitations
+
+- Single-hand tracking only (`numHands: 1`)
+- Requires decent, even lighting for reliable hand detection
+- No persistent storage — refreshing the page clears your canvas (use **Download** first)
+- MediaPipe model and WASM assets load from CDN, so an internet connection is required on first load
+
+## Credits
+
+Hand tracking powered by [Google MediaPipe](https://github.com/google-ai-edge/mediapipe).
